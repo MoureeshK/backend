@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background: white;
+}
+.plane {
+  margin: 20px auto;
+  max-width: 1000px;
+  border:3px solid lightgrey;
+  border-radius: 10px;
+}
+.select {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.select h1 {
+  width: 90%;
+  margin: 100px auto 35px auto;
+}
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.seats {
+  display: flex;
+  flex-direction: row;
+}
+.seat {
+  display: flex;
+  flex: 0 0 14.28%;
+  padding: 5px;
+  position: relative;
+}
+.seat label {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: 1.5rem;
+  padding: 4px 0;
+  background: #aeb5bc;
+  border-radius: 5px; 
+  color: black; 
+}
+.seat label:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.seat:nth-child(3) {
+  margin-right: 14%;
+}
+.seat input[type=checkbox] {
+  position: absolute;
+}
+.seat input[type=checkbox]:checked + label {
+  background: green;
+}
+
+
+
+
